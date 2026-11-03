@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Tips</title>
-<h1> Hey traveler! </h1>
-<h2> Press below to select a destination </h2>
-</head> 
-
-<p id="message"> Destination List: </p>
-
-<button id="myButton">Click Here</button> 
+    
 <style>
     body {
         font-family: "Times New Roman", serif;
@@ -30,11 +24,24 @@
         background-color: #42b9d9;
     }
 </style>
+</head> 
+    
+<body>
+
+<h1> Hey traveler! </h1>
+<h2> Press below to select a destination </h2>
+<p id="message"> Destination List: </p>
+
+<button id="myButton">Click Here</button> 
+
 
 <script>
 const button = document.getElementById("myButton");
-button.addEventListener("click", function() { document.getElementById("message").innerHTML = "You have selected a destination!"; });
-    console.log("Button clicked!");
+button.addEventListener("click", function() { document.getElementById("message").innerHTML = "You have selected a destination!"; 
+           console.log("Button clicked!"); //needs to be in the function
+                                            });
+ 
 </script>
-
+    
+</body>
 </html>
